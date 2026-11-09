@@ -1,0 +1,31 @@
+ÓCULOS TEC — cópia dos sites (baixado em 09/11/2026)
+=====================================================
+
+Funil:  glasses (PRESELL)  -->  botões vão para https://dailyhealthgood.site
+        clar77 (VENDAS)     -->  botões de compra vão para https://guiacompletodeconteudoparaavoce.site
+
+glasses/   = https://especiaisdavida.shop/glasses/
+  index.html                 página principal da presell
+  style.css                  estilo da presell
+  contato / privacidade / termos .html   páginas do rodapé
+  assets/imagens, assets/videos          imagens e GIFs (webm/mp4)
+
+clar77/    = https://especiaisdavida.shop/clar77/
+  index.html                 página de vendas (CSS embutido no próprio HTML)
+  contato / privacidade / termos .html
+  assets/imagens, assets/videos
+
+O que foi ajustado em relação ao original:
+- Imagens e vídeos agora estão salvos localmente (antes vinham de
+  especiaisdavida.shop e memoriaemfoco.site/wp-content).
+- Botões/links da presell -> https://dailyhealthgood.site
+- Botões de compra da página de vendas -> https://guiacompletodeconteudoparaavoce.site
+  (checkout antigo oculosclarbrasil.shop removido)
+
+Continua igual / externo (precisa de internet):
+- Google Fonts (Poppins) e Font Awesome.
+
+Rastreio: os códigos da UTMify (UTMs + pixel Google 68c17a95...) foram REMOVIDOS.
+Cole o seu novo código de rastreio dentro do <head> de glasses/index.html e clar77/index.html.
+
+Para abrir: dê dois cliques em glasses/index.html.
