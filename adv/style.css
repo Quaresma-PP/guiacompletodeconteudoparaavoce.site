@@ -461,3 +461,51 @@ body {
     .tm-row, .tm-row.reverse { flex-direction: column; gap: 16px; padding: 20px 0; }
     .tm-text h3 { font-size: 18px; }
 }
+
+/* ===== Texto maior e um pouco mais escuro (público mais velho) ===== */
+.section p, .section > span { font-size: 18px; color: #2d3748; line-height: 1.65; }
+.media-caption { font-size: 14px; color: #4a5568; }
+.tm-text p { font-size: 17px; color: #2d3748; }
+.review-text { font-size: 16px; color: #2d3748; }
+.faq-answer { font-size: 16px; color: #2d3748; }
+.faq-question { font-size: 16px; }
+.pv-offer-pros li { font-size: 15px; color: #1f2937; }
+.pv-price-cash { font-size: 16px; color: #2d3748; }
+
+/* ===== Leitura fácil no celular (público mais velho) ===== */
+.section p, .section > span, .tm-text p, .review-text, .faq-answer { color: #1f2937; }
+.media-caption { color: #374151; }
+.author-info { font-size: 15px; color: #374151; }
+.review-meta { font-size: 14px; }
+.review-verified { font-size: 14px; }
+.pv-offer-note { font-size: 15px; color: #374151; }
+.cta-btn { font-weight: 700; }
+
+@media (max-width: 480px) {
+    .blog { padding: 0 18px; }
+    .article-title { font-size: 24px; line-height: 1.3; }
+    .author-img { width: 44px; height: 44px; }
+    .author-stars { font-size: 16px; }
+    .section h2 { font-size: 23px; line-height: 1.3; }
+    .section p, .section > span { font-size: 19px; line-height: 1.6; }
+    .media-caption { font-size: 15px; }
+    .tm-text h3 { font-size: 21px; }
+    .tm-text .tm-sub { font-size: 15px; }
+    .tm-text p { font-size: 18px; }
+    .reviews-title { font-size: 23px; }
+    .review-author-name { font-size: 17px; }
+    .review-headline { font-size: 18px; }
+    .review-text { font-size: 17px; }
+    .faq-section h2 { font-size: 23px; }
+    .faq-question { font-size: 18px; }
+    .faq-answer { font-size: 17px; }
+    .pv-offer-title { font-size: 21px; }
+    .pv-offer-subtitle { font-size: 18px; }
+    .pv-offer-price { font-size: 19px; }
+    .pv-price-new { font-size: 27px; }
+    .pv-price-cash { font-size: 18px; }
+    .pv-offer-pros li { font-size: 17px; }
+    .pv-offer-pros li img { width: 26px; height: 26px; }
+    .pv-offer-note { font-size: 15px; }
+    .cta-btn, .pv-offer .cta-btn { display: block; width: 100%; font-size: 19px; padding: 20px 16px; border-radius: 12px; }
+}
