@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 44 44">
+  <defs>
+    <clipPath id="clip-Linkedin_Multicontent">
+      <rect width="44" height="44"/>
+    </clipPath>
+  </defs>
+  <g id="Linkedin_Multicontent" data-name="Linkedin Multicontent" clip-path="url(#clip-Linkedin_Multicontent)">
+    <path id="Caminho_2978" data-name="Caminho 2978" d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Z" transform="translate(2 2)" fill="none" stroke="#333" stroke-width="1"/>
+    <g id="Grupo_6278" data-name="Grupo 6278" transform="translate(26.063 -261.132)">
+      <rect id="Retângulo_11669" data-name="Retângulo 11669" width="4.301" height="13.765" transform="translate(-14.531 279.499)"/>
+      <path id="Caminho_2986" data-name="Caminho 2986" d="M-12.471,273a2.411,2.411,0,0,0-2.629,2.388,2.388,2.388,0,0,0,2.569,2.388h.034a2.4,2.4,0,0,0,2.62-2.388A2.4,2.4,0,0,0-12.471,273Z"/>
+      <path id="Caminho_2987" data-name="Caminho 2987" d="M80.928,346.9c-2.465,0-4.008,1.345-4.293,2.293v-2.164H71.8c.06,1.146,0,13.765,0,13.765h4.836v-7.439a3.253,3.253,0,0,1,.1-1.129,2.459,2.459,0,0,1,2.327-1.689c1.681,0,2.439,1.276,2.439,3.138v7.12h4.879v-7.654C86.384,348.883,83.988,346.9,80.928,346.9Z" transform="translate(-79.41 -67.53)"/>
+    </g>
+  </g>
+</svg>

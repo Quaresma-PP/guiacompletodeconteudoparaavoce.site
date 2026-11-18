@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("bdc83ad2b1-6xK3dSBYKcSV-LCoeQqfX1RYOo3aPw.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("0a7f3c4dc3-6xKydSBYKcSV-LCoeQqfX1RYOo3i54rAkA.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("5f56c59976-6xKydSBYKcSV-LCoeQqfX1RYOo3ig4vAkA.ttf") format('truetype');
+}
