@@ -509,3 +509,7 @@ body {
     .pv-offer-note { font-size: 15px; }
     .cta-btn, .pv-offer .cta-btn { display: block; width: 100%; font-size: 19px; padding: 20px 16px; border-radius: 12px; }
 }
+
+/* Legenda abaixo dos GIFs: menor e mais clara */
+.media-caption { font-size: 13px !important; color: #6b7280 !important; }
+@media (max-width: 480px) { .media-caption { font-size: 14px !important; } }
