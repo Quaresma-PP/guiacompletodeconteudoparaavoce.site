@@ -1,0 +1,35 @@
+AEROPLUS — ADVERTORIAL PARA MIGRACAO
+
+Envie index.html e a pasta assets juntos para a nova hospedagem.
+Para publicar em /adv/, coloque ambos dentro da pasta adv.
+Nao e necessario PHP, WordPress, Node ou banco de dados.
+
+NOVO DESTINO DE COMPRA
+Os 3 links de oferta mantem a classe checkout_link e estao com href="#".
+Substitua esse href pela URL da nova pagina de venda ou checkout e remova
+aria-disabled="true" nesses links. Procure por checkout_link no HTML.
+Os 5 links de categorias que apontavam para a loja antiga tambem foram
+neutralizados. Todos os 8 links estao marcados com data-novo-checkout.
+Nenhum checkout novo foi integrado.
+
+LIMPEZA
+Removidos todos os scripts originais, incluindo pixels, analytics,
+UTMify, gerenciadores de tags, mapas de calor, notificacoes e publicidade.
+Removidos iframes, noscript, atributos de eventos e conexoes antecipadas.
+Imagens, fontes e CSS usados estao na pasta assets, com caminhos relativos.
+Links editoriais externos continuam apontando para os destinos originais.
+Compartilhamento foi ocultado porque usava um endereco antigo.
+Menus e busca dinamicos do portal nao possuem os scripts originais;
+esta entrega e uma versao estatica do advertorial.
+
+OBSERVACOES
+A pagina fornecida usa TechTudo, nao Veja. A identidade e o texto foram
+preservados conforme a origem; esta migracao nao verifica vinculo editorial,
+licenciamento ou as alegacoes comerciais do texto.
+A imagem original btn-aplicar-desconto.png retornou HTTP 404 e foi substituida
+por um botao verde em HTML com o texto APLICAR DESCONTO.
+
+VALIDACAO
+Pagina aberta em navegador: titulo e conteudo renderizados, nove imagens
+carregadas, zero scripts e os tres links de oferta sem destino antigo.
+Verificacao de caminhos locais sem arquivos ausentes.
