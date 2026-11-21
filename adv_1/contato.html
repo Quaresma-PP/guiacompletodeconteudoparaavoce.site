@@ -6,11 +6,6 @@
 <title>Contato e orçamento · Aurus</title>
 <meta name="description" content="Solicite um orçamento ou fale com a Aurus em Camaragibe/PE.">
 <meta name="theme-color" content="#1f5eff">
-<meta property="og:title" content="Contato e orçamento · Aurus">
-<meta property="og:description" content="Solicite um orçamento ou fale com a Aurus em Camaragibe/PE.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary">
-<link rel="icon" href="favicon.ico" type="image/x-icon">
 <style>
 :root{--c:#1f5eff;--c-dark:#1644b8;--c-soft:#e9efff;--c-mid:#c0d2ff;--on-c:#ffffff;
 --ink:#14171c;--ink-2:#4b5361;--muted:#6b7280;--line:#e4e7ec;--bg:#ffffff;--bg-2:#f6f7f9;--r:14px;--r-sm:10px;--max:1160px}
@@ -165,24 +160,22 @@ section.alt{background:var(--bg-2)}
 .wa{position:fixed;right:18px;bottom:18px;z-index:40;width:58px;height:58px;border-radius:50%;background:#1faa59;color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -12px rgba(0,0,0,.5)}
 .wa svg{width:30px;height:30px}
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
-
 </style>
 </head>
 <body>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="top">
   <div class="wrap">
-    <a href="index.html" class="brand" aria-label="Aurus — página inicial"><i aria-hidden="true">A</i>AURUS</a>
+    <a class="brand" href="index.html" aria-label="Aurus — página inicial"><i aria-hidden="true">A</i>Aurus</a>
     <button class="menu" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
     </button>
     <nav class="nav" id="menu" aria-label="Principal">
-      <a href="index.html">Início</a>
-      <a href="index.html#sobre">Sobre a AURUS</a>
-      <a href="index.html#como-funciona">Como funciona</a>
+      <a href="index.html" >Início</a>
+      <a href="index.html#sobre">Sobre</a>
       <a href="index.html#perguntas">Dúvidas</a>
       <a href="contato.html" aria-current="page">Contato</a>
-      <a href="contato.html" class="btn">Falar com o atendimento</a>
+      <a class="btn" href="contato.html">Solicitar orçamento</a>
     </nav>
   </div>
 </header>
@@ -203,7 +196,7 @@ section.alt{background:var(--bg-2)}
       <div class="row2">
         <div class="field">
           <label for="nome">Nome <span class="req">*</span></label>
-          <input id="nome" name="nome" autocomplete="name">
+          <input id="nome" name="nome" autocomplete="name" required>
           <div class="err" id="nome-err">Informe seu nome.</div>
         </div>
         <div class="field">
@@ -214,19 +207,19 @@ section.alt{background:var(--bg-2)}
       <div class="row2">
         <div class="field">
           <label for="telefone">Telefone ou WhatsApp <span class="req">*</span></label>
-          <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000">
+          <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" required>
           <div class="err" id="telefone-err">Informe um telefone com DDD.</div>
         </div>
         <div class="field">
           <label for="email">E-mail <span class="req">*</span></label>
-          <input id="email" name="email" type="email" autocomplete="email">
+          <input id="email" name="email" type="email" autocomplete="email" required>
           <div class="err" id="email-err">Informe um e-mail válido.</div>
         </div>
       </div>
       <div class="row2">
         <div class="field">
           <label for="objetivo">Assunto <span class="req">*</span></label>
-          <select id="objetivo" name="objetivo">
+          <select id="objetivo" name="objetivo" required>
             <option value="">Selecione</option>
             <option>Solicitar orçamento</option>
             <option>Tirar dúvidas sobre um serviço</option>
@@ -252,14 +245,11 @@ section.alt{background:var(--bg-2)}
       </div>
       <div class="field">
         <label for="mensagem">Mensagem <span class="req">*</span></label>
-        <textarea id="mensagem" name="mensagem" placeholder="Descreva o que você precisa, prazos e detalhes importantes."></textarea>
+        <textarea id="mensagem" name="mensagem" required placeholder="Descreva o que você precisa, prazos e detalhes importantes."></textarea>
         <div class="err" id="mensagem-err">Escreva sua mensagem (mínimo de 10 caracteres).</div>
       </div>
-      <label class="check">
-        <input type="checkbox" id="aceite">
-        <span>Li e concordo com a <a href="politica-de-privacidade.html">Política de Privacidade</a>. <span class="req" style="color:#b42318">*</span></span>
-      </label>
-      <div class="err" id="aceite-err" style="color:#b42318;font-size:.88rem">É preciso concordar com a Política de Privacidade.</div>
+      <label class="check"><input type="checkbox" id="aceite" required> <span>Li e concordo com a <a href="politica-de-privacidade.html">Política de Privacidade</a>. <span class="req" style="color:#b42318">*</span></span></label>
+      <div class="err" id="aceite-err" style="color:#b42318;font-size:.88rem;display:none">É preciso concordar com a Política de Privacidade.</div>
       <div class="status" id="status" role="status" aria-live="polite"></div>
       <button class="btn" type="submit">Enviar por e-mail</button>
     </form>
@@ -267,8 +257,7 @@ section.alt{background:var(--bg-2)}
     <aside class="card" aria-label="Canais de atendimento">
       <h2 style="font-size:1.3rem">Outros canais</h2>
       <ul class="list">
-        <li><span><strong>Telefone</strong><br><a href="tel:+551699999999">(16) 9999-9999</a></span></li>
-        <li><span><strong>Endereço</strong><br>AVENIDA DOS GIRASSOIS, 293, NOVO CARMELO<br>Camaragibe/PE · CEP 54759-050</span></li>
+<li><span><strong>Telefone</strong><br><a href="tel:+551699999999">(16) 9999-9999</a></span></li>        <li><span><strong>Endereço</strong><br>AVENIDA DOS GIRASSOIS, 293, NOVO CARMELO<br>Camaragibe/PE · CEP 54759-050</span></li>
         <li><span><strong>Aurus Ltda</strong><br>CNPJ 59.160.289/0001-59</span></li>
       </ul>
     </aside>
@@ -280,88 +269,77 @@ section.alt{background:var(--bg-2)}
   <div class="wrap">
     <div class="cols">
       <div>
-        <h3>AURUS LTDA — CNPJ 59.160.289/0001-59</h3>
-        <p>Comércio eletrônico de produtos físicos fornecidos por parceiros nacionais e internacionais.</p>
+        <h3>Aurus</h3>
+        <p>Aurus é uma empresa de comércio varejista de produtos alimentícios em geral ou especializado em produtos alimentícios não especificados anteriormente, em…</p>
       </div>
       <div>
         <h3>Contato</h3>
         <ul>
-          <li>Telefone: <a href="tel:+551699999999">(16) 9999-9999</a></li>
-          <li>Avenida dos Girassóis, 293, Novo Carmelo</li>
-          <li>Camaragibe/PE · CEP 54759-050</li>
+<li>Telefone: <a href="tel:+551699999999">(16) 9999-9999</a></li><li>AVENIDA DOS GIRASSOIS, 293, NOVO CARMELO</li>          <li>Camaragibe/PE · CEP 54759-050</li>
         </ul>
       </div>
       <div>
         <h3>Institucional</h3>
         <ul>
           <li><a href="index.html">Início</a></li>
-          <li><a href="contato.html">Contato</a></li>
+          <li><a href="contato.html">Contato e orçamento</a></li>
           <li><a href="politica-de-privacidade.html">Política de Privacidade</a></li>
           <li><a href="termos-de-uso.html">Termos de Uso</a></li>
         </ul>
       </div>
     </div>
-    <div class="legal">© 2026 AURUS LTDA. Todos os direitos reservados.</div>
-    <div class="cred">Imagens ilustrativas: Andrew Patrick Photo, Ron Lach (Pexels).</div>
-  </div>
+    <div class="legal">© 2026 Aurus Ltda · CNPJ 59.160.289/0001-59 · Camaragibe/PE</div>
+<div class="cred">Imagens ilustrativas: Andrew Patrick Photo, Ron Lach (Pexels).</div>  </div>
 </footer>
+
 <script>
-(function(){var b=document.querySelector(".menu"),n=document.getElementById("menu");
-function set(o){n.classList.toggle("open",o);b.setAttribute("aria-expanded",o);b.setAttribute("aria-label",o?"Fechar menu":"Abrir menu");}
-b.addEventListener("click",function(){set(!n.classList.contains("open"));});
-n.addEventListener("click",function(){set(false);});})();
-/* Destino do formulário. Não há servidor: a mensagem abre no e-mail (ou WhatsApp) do visitante.
-   Preencha WA (ex.: "5516999999999") para usar WhatsApp, ou MAIL para o e-mail de destino. */
 (function(){
-var WA = "";
-var MAIL = "";
-var EMPRESA = "Aurus";
-var form = document.getElementById("orcamento");
-var status = document.getElementById("status");
-function $(id){ return document.getElementById(id); }
-function val(id){ return $(id).value.trim(); }
-function validar(){
-  var e = [];
-  if (val("nome").length < 2) e.push("nome");
-  if ($("telefone").value.replace(/\D/g, "").length < 10) e.push("telefone");
-  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val("email"))) e.push("email");
-  if (!$("objetivo").value) e.push("objetivo");
-  if (val("mensagem").length < 10) e.push("mensagem");
-  if (!$("aceite").checked) e.push("aceite");
-  return e;
-}
-function marcar(id, on){
-  var el = $(id), err = $(id + "-err");
-  if (on) el.setAttribute("aria-invalid", "true"); else el.removeAttribute("aria-invalid");
-  if (err) err.classList.toggle("show", on);
-}
-["nome","telefone","email","objetivo","mensagem","aceite"].forEach(function(id){
-  var ev = (id === "objetivo" || id === "aceite") ? "change" : "input";
-  $(id).addEventListener(ev, function(){ marcar(id, false); });
-});
-function mostrar(tipo, texto){ status.className = "status show " + tipo; status.textContent = texto; }
-function enviar(){
-  var l = ["Olá, " + EMPRESA + "!", "", "Nome: " + val("nome")];
-  if (val("empresa")) l.push("Empresa: " + val("empresa"));
-  l.push("Telefone: " + val("telefone"), "E-mail: " + val("email"), "Assunto: " + $("objetivo").value);
-  if (val("servico")) l.push("Interesse: " + val("servico"));
-  if ($("investimento").value) l.push("Investimento estimado: " + $("investimento").value);
-  l.push("", "Mensagem:", val("mensagem"));
-  var txt = l.join("\n");
-  if (WA) {
-    window.open("https://wa.me/" + WA + "?text=" + encodeURIComponent(txt), "_blank", "noopener");
-    return "Abrimos o WhatsApp com a sua mensagem. Para concluir, toque em enviar no aplicativo.";
+  var b=document.querySelector('.menu'),n=document.getElementById('menu');
+  if(!b||!n)return;
+  b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false');b.setAttribute('aria-label',o?'Fechar menu':'Abrir menu');});
+  n.addEventListener('click',function(e){if(e.target.tagName==='A'){n.classList.remove('open');b.setAttribute('aria-expanded','false');}});
+})();
+</script>
+<script>
+/* Destino do formulario: e-mail .
+   Nao ha servidor recebendo os dados: a mensagem abre no aplicativo do visitante, ja preenchida.
+   Para gravar os pedidos num sistema, troque a funcao enviar() por um POST para o seu backend. */
+(function(){
+  var f=document.getElementById('orcamento'), st=document.getElementById('status');
+  var WA='', MAIL='', EMPRESA="Aurus";
+  function mark(id,bad){var el=document.getElementById(id),er=document.getElementById(id+'-err');if(el)el.setAttribute('aria-invalid',bad?'true':'false');if(er){er.classList.toggle('show',bad);er.style.display=bad?'block':'none';}return bad;}
+  function valida(){
+    var v=function(id){return (document.getElementById(id).value||'').trim();};
+    var bad=[];
+    if(mark('nome',v('nome').length<2))bad.push('nome');
+    if(mark('telefone',v('telefone').replace(/\D/g,'').length<10))bad.push('telefone');
+    if(mark('email',!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v('email'))))bad.push('email');
+    if(mark('objetivo',!v('objetivo')))bad.push('objetivo');
+    if(mark('mensagem',v('mensagem').length<10))bad.push('mensagem');
+    var ac=document.getElementById('aceite').checked;document.getElementById('aceite-err').style.display=ac?'none':'block';if(!ac)bad.push('aceite');
+    return bad;
   }
-  window.location.href = "mailto:" + MAIL + "?subject=" + encodeURIComponent($("objetivo").value + " · " + val("nome")) + "&body=" + encodeURIComponent(txt);
-  return "Abrimos o seu aplicativo de e-mail com a mensagem. Para concluir, envie o e-mail.";
-}
-form.addEventListener("submit", function(ev){
-  ev.preventDefault();
-  var erros = validar();
-  ["nome","telefone","email","objetivo","mensagem","aceite"].forEach(function(id){ marcar(id, erros.indexOf(id) >= 0); });
-  if (erros.length) { mostrar("bad", "Revise os campos destacados."); $(erros[0]).focus(); return; }
-  mostrar("ok", enviar());
-});
+  function enviar(){
+    var g=function(id){return (document.getElementById(id).value||'').trim();};
+    var linhas=['Olá, '+EMPRESA+'!','','Nome: '+g('nome')];
+    if(g('empresa'))linhas.push('Empresa: '+g('empresa'));
+    linhas.push('Telefone: '+g('telefone'),'E-mail: '+g('email'),'Assunto: '+g('objetivo'));
+    if(g('servico'))linhas.push('Interesse: '+g('servico'));
+    if(g('investimento'))linhas.push('Investimento estimado: '+g('investimento'));
+    linhas.push('','Mensagem:',g('mensagem'));
+    var txt=linhas.join('\n');
+    if(WA){window.open('https://wa.me/'+WA+'?text='+encodeURIComponent(txt),'_blank','noopener');return 'Abrimos o WhatsApp com a sua mensagem. Para concluir, toque em enviar no aplicativo.';}
+    window.location.href='mailto:'+MAIL+'?subject='+encodeURIComponent(g('objetivo')+' · '+g('nome'))+'&body='+encodeURIComponent(txt);
+    return 'Abrimos o seu aplicativo de e-mail com a mensagem. Para concluir, envie o e-mail.';
+  }
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var bad=valida();
+    st.className='status show '+(bad.length?'bad':'ok');
+    if(bad.length){st.textContent='Revise os campos destacados.';var first=document.getElementById(bad[0]);if(first)first.focus();return;}
+    st.textContent=enviar();
+  });
+  f.addEventListener('input',function(e){if(e.target.getAttribute('aria-invalid')==='true')mark(e.target.id,false);});
 })();
 </script>
 </body>
